@@ -110,7 +110,7 @@ LangGraph를 활용하여 각 Agent를 그래프 형태로 연결하였다.
 
 ## Graph Structure
 
-![alt text](image-1.png)
+<img width="115" height="432" alt="image" src="https://github.com/user-attachments/assets/5c17d438-e6e9-447f-8cde-8f052288486d" />
 
 ```python
 graph.add_edge("extractor", "candidate")
@@ -194,7 +194,7 @@ Prompt를 역할별로 분리함으로써
 
 ## Result Image
 
-![alt text](image.png)
+<img width="1200" height="407" alt="image" src="https://github.com/user-attachments/assets/f7324a82-8445-48b9-925c-67d3ee3c40c5" />
 
 ---
 
