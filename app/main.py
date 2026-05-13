@@ -7,24 +7,18 @@ from app.state import AgentState
 from app.agents import extractor_agent, candidate_agent, answer_agent
 
 
-# ==================================================
 # 1. 환경 설정
-# ==================================================
 os.environ["OPENAI_API_KEY"] = "NA"
 
 
-# ==================================================
 # 2. LLM 설정
-# ==================================================
 llm = ChatOpenAI(
     model="ollama/llama3.2",
     base_url="http://localhost:11434"
 )
 
 
-# ==================================================
 # 3. LangGraph 정의
-# ==================================================
 graph = StateGraph(AgentState)
 
 graph.add_node("extractor", extractor_agent)
@@ -40,9 +34,7 @@ graph.add_edge("answer", END)
 app = graph.compile()
 
 
-# ==================================================
 # 4. 실행
-# ==================================================
 if __name__ == "__main__":
 
     print("============================== LangGraph 구조:")
